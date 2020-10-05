@@ -21,7 +21,7 @@ python manage.py runserver 8000
 ```
 
 # How to use
-1. visit `http://localhost:8000` from your favotrite browser and click on `subscribe me` button on the page
+1. visit `http://localhost:8000` from your favotrite browser's non-private tab and click on `subscribe me` button on the page
 2. visit `http://localhost:8000/dashboard`, and click on `Trigger push notification for localhost` button
-3. you should expect a notification popping up with a test title, a test message
+3. you should expect a notification popping up with a test title, a test message. (Tested on firefox)
 
