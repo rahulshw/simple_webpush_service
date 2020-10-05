@@ -1,0 +1,8 @@
+<body>
+<p id="demo">Hey</p>
+<script src="/assets/utils.js"></script>
+
+{% for website in all_websites %}
+<button onclick="trigger_push_notification('{{ website.domain }}')">Trigger push notification for {{ website.domain }} </button>
+{% endfor %}
+</body>

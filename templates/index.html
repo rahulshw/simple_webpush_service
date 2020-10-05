@@ -1,0 +1,19 @@
+
+<body>
+<script src="/assets/utils.js"></script>
+<script>
+
+function subscribe_user(){
+    askPermission() // ask for user's permission
+    .then(fetch_vapid_public_key) // get vapid keys from backend
+    .then(subscribeUserToPush) // subscribe a user to push notifications and get subscription data
+    .then(push_subscription_data) // post subscription data to backend
+}
+
+</script>
+
+<p id="demo">Welcome to dummy push service!!</p>
+<!-- buttons for subscribing to each website notification -->
+<button onclick="subscribe_user()">Subscribe Me</button>
+
+</body>
