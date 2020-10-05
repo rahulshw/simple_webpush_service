@@ -8,12 +8,12 @@ pip install -r requirements.txt
 ```
 2. Set up database
 ```
-python manage.py makemigrations
+python manage.py makemigrations dummy_push_service
 python manage.py migrate
 ```
 3. Add an entry to database for localhost.
 ```
-python add_website.py
+python manage.py shell < add_website.py 
 ```
 4. Start the server
 ```
