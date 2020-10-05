@@ -15,6 +15,10 @@ python manage.py migrate
 ```
 python add_website.py
 ```
+4. Start the server
+```
+python manage.py runserver 8000
+```
 
 # How to use
 1. visit `http://localhost:8000` from your favotrite browser and click on `subscribe me` button on the page
